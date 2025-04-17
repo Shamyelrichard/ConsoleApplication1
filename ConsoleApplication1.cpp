@@ -1,6 +1,15 @@
 ﻿#include <iostream>
+int max(int n, int m) {
+    if (n > m) {
+        return n;
+    }
+    return m;
+}
 
 int main()
 {
-    std::cout << "hello world from shamil";
+    int n, m;
+    std::cin >> n;
+    std::cin >> m;
+    std::cout << max(n, m);
 }
